@@ -1,0 +1,57 @@
+.main{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 72px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tabs{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 48px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.about a p.new-label span{
+    position: relative;
+    content: 'About';
+  }
+
+.about:hover a p.new-label span{
+    display: none;
+  }
+
+.about:hover a p.new-label:after{
+    content: '> About';
+  }
+
+.contact a p.new-label span{
+    position: relative;
+    content: 'Contact';
+  }
+
+.contact:hover a p.new-label span{
+    display: none;
+  }
+
+.contact:hover a p.new-label:after{
+    content: '> Contact';
+  }
+
+.projects a p.new-label span{
+    position: relative;
+    content: 'Projects';
+  }
+
+.projects:hover a p.new-label span{
+    display: none;
+  }
+
+.projects:hover a p.new-label:after{
+    content: '> Projects';
+  }
