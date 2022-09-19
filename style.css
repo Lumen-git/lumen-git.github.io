@@ -18,6 +18,67 @@
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 5px;
+    float: left;
+}
+
+.subtext{
+    font-family: Century Gothic, Arial, sans-serif;
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    clear: left;
+}
+
+.projectdiv{
+  margin: 60px 200px 60px 200px;
+  display: grid;
+  object-fit: contain;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 100px;
+  column-gap: auto;
+}
+
+.projectimage{
+  object-fit: contain;
+  display: block;
+  height: 80%;
+  width: 100%;
+  margin: auto;
+}
+
+.projecttext{
+  font-family: Century Gothic, Arial, sans-serif;
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.projectsubtext{
+  font-family: Century Gothic, Arial, sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.projects{
+  width: 100%;
+  background-color: white;
+  margin-bottom: 25px;
+  object-fit: contain;
+}
+
+.projects:hover .projectimage {
+  opacity: 0.6;
+}
+
+.homelink{
+  font-family: Century Gothic, Arial, sans-serif;
+  float: right;
+  font-weight: bold;
 }
 
 
