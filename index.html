@@ -7,12 +7,28 @@
         <title>Virtual Home of Lumen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+
+        <script>
+            if ( window.addEventListener ) {
+                var kkeys = [], k = "38,38,40,40,37,39,37,39,66,65";
+                window.addEventListener("keydown", function(e){
+                kkeys.push( e.keyCode );
+                if ( kkeys.toString().indexOf( k ) >= 0 ){
+                    alert("♥");
+                    kkeys = [];
+                }
+                }, true);
+            }
+        </script>
+
     </head>
     <body>
        
-        <p class="main">Hello, I'm <b>Aidan "Lumen" Moran</b>. I'm a <b>Computer Scientist</b>, <b>Chemist</b>, and general <b>Researcher</b> of many scientific fields. I like <b>minimalistic webpages</b>. <i>Welcome to my website</i>.</p>
+        <p class="main">Hello, I'm <b>Aidan "Lumen" Moran</b>. I'm a <b>Computer Scientist</b>, <b>Chemist</b>, and general <b>Researcher</b> of many scientific fields. This is my little corner of the internet to host my portfolio, contact, and other bits I want to send out into the digital void. Welcome to my website.</p>
 
         <hr>
+
+        <!-- Nosy little coder, aren't ya? -->
 
         <div class="about" style="width:fit-content">
             <a href="about.html">
@@ -25,7 +41,7 @@
         <div class="contact" style="width:fit-content">
             <a href="contact.html">
                 <p class="tabs new-label">
-                    <span>Contact</span>
+                    <span>Contact & Links</span>
                 </p>
             </a>
         </div>

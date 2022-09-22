@@ -1,13 +1,13 @@
 .main{
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 72px;
+    font-size: 58px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .tabs{
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -119,7 +119,7 @@ a{
 
 .contact a p.new-label span{
     position: relative;
-    content: 'Contact';
+    content: 'Contact & Links';
   }
 
 .contact:hover a p.new-label span{
@@ -127,7 +127,7 @@ a{
   }
 
 .contact:hover a p.new-label:after{
-    content: '> Contact';
+    content: '> Contact & Links';
   }
 
 .projects a p.new-label span{
