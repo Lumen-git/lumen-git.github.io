@@ -94,6 +94,31 @@
   margin-top: 5px;
 }
 
+.booktitle{
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  margin: 5px;
+}
+
+.bookauthor{
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+  font-size: 28px;
+  margin: 5px;
+}
+
+.bookdesc{
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.bookcrate{
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
 
 /* 
 Everything below is for the little > indicator on the homepage
@@ -130,15 +155,28 @@ a{
     content: '> Contact & Links';
   }
 
-.projects a p.new-label span{
+.projectsmain a p.new-label span{
     position: relative;
     content: 'Projects';
   }
 
-.projects:hover a p.new-label span{
+.projectsmain:hover a p.new-label span{
     display: none;
   }
 
-.projects:hover a p.new-label:after{
+.projectsmain:hover a p.new-label:after{
     content: '> Projects';
+  }
+
+.books a p.new-label span{
+  position: relative;
+  content: 'Reading List';
+}
+
+.books:hover a p.new-label span{
+    display: none;
+  }
+
+.books:hover a p.new-label:after{
+    content: '> Reading List';
   }
