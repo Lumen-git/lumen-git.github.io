@@ -171,7 +171,7 @@ a{
 
 .projectsmain a p.new-label span{
     position: relative;
-    content: 'Projects';
+    content: 'Project Showcase';
   }
 
 .projectsmain:hover a p.new-label span{
@@ -179,7 +179,33 @@ a{
   }
 
 .projectsmain:hover a p.new-label:after{
-    content: '> Projects';
+    content: '> Project Showcase';
+  }
+
+  .projectsall a p.new-label span{
+    position: relative;
+    content: 'All Projects';
+  }
+
+.projectsall:hover a p.new-label span{
+    display: none;
+  }
+
+.projectsall:hover a p.new-label:after{
+    content: '> All Projects';
+  }
+
+  .gamesmods a p.new-label span{
+    position: relative;
+    content: 'Games & Mods';
+  }
+
+.gamesmods:hover a p.new-label span{
+    display: none;
+  }
+
+.gamesmods:hover a p.new-label:after{
+    content: '> Games & Mods';
   }
 
 .books a p.new-label span{
