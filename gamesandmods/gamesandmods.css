@@ -7,12 +7,27 @@
       "first second third"
 
   }
+
+  .gameimage{
+    float: left;
+    width: 20%;
+    display: grid;
+  }
   
-  .first { grid-area: first; text-align: justify;}
+  .first { 
+    grid-area: first; 
+    text-align: 
+    justify;
+  }
   
-  .second { grid-area: second; text-align: justify;}
+  .second { 
+    grid-area: second; 
+    text-align: justify;
+  }
   
-  .third { grid-area: third; text-align: justify;}
+  .third { 
+    grid-area: third; 
+    text-align: justify;}
   
   
   .first img {
@@ -28,4 +43,13 @@
 .third img {
     display: block;
     margin: 0 auto;
+}
+
+.text{
+  font-family: Century Gothic, Arial, sans-serif;
+  font-size: 22px;
+}
+
+a{
+  font-weight: bold;
 }
