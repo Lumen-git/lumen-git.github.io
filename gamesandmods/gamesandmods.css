@@ -16,8 +16,7 @@
   
   .first { 
     grid-area: first; 
-    text-align: 
-    justify;
+    text-align: justify;
   }
   
   .second { 
@@ -27,7 +26,8 @@
   
   .third { 
     grid-area: third; 
-    text-align: justify;}
+    text-align: justify;
+  }
   
   
   .first img {
