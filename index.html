@@ -1,108 +1,110 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Virtual Home of Lumen</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="glider.ico">
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Virtual Home of Lumen</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="split.css">
-        <link rel="shortcut icon" href="glider.ico">
-
-        <script>
-            if ( window.addEventListener ) {
-                var kkeys = [], k = "38,38,40,40,37,39,37,39,66,65";
-                window.addEventListener("keydown", function(e){
-                kkeys.push( e.keyCode );
-                if ( kkeys.toString().indexOf( k ) >= 0 ){
-                    alert("♥");
-                    kkeys = [];
-                }
-                }, true);
+    <script>
+        if ( window.addEventListener ) {
+            var kkeys = [], k = "38,38,40,40,37,39,37,39,66,65";
+            window.addEventListener("keydown", function(e){
+            kkeys.push( e.keyCode );
+            if ( kkeys.toString().indexOf( k ) >= 0 ){
+                alert("♥");
+                kkeys = [];
             }
-        </script>
+            }, true);
+        }
+    </script>
 
-    </head>
-    <body>
-       
-        <p class="main">Hello, I'm <b>Aidan "Lumen" Moran</b>. I'm a <b>Computer Scientist</b>, <b>Chemist</b>, and general <b>Researcher</b> of many scientific fields. This is my little corner of the internet to host my portfolio, contact, and other bits I want to send out into the digital void. Welcome to my website.</p>
+</head>
 
-        <hr>
+<body style="padding: 0px; margin: 0px">
+    
+    <div class="containerHomepage">
 
-        <!-- Nosy little coder, aren't ya? -->
+        <div class="Main">
+            <p class="mainText">Hello, I'm <b>Aidan "Lumen" Moran</b>. I'm a <b>Computer Scientist</b>, <b>Chemist</b>, and general <b>Researcher</b> of many scientific fields. This is my little corner of the internet to host my portfolio, contact, and other bits I want to send out into the digital void. Welcome to my website.</p>
+            <hr>
+        </div>
 
-        <div class="container">
+        <div class="FunZone1">
 
-            <div class="first">
+            <div class="about" style="width:fit-content">
+                <a href="about/about.html">
+                    <p class="tabs new-label">
+                        <span>About</span>
+                    </p>
+                </a>
+            </div>
 
-                <div class="about" style="width:fit-content">
-                    <a href="about/about.html">
-                        <p class="tabs new-label">
-                            <span>About</span>
-                        </p>
-                    </a>
-                </div>
+            <div class="contact" style="width:fit-content">
+                <a href="contact/contact.html">
+                    <p class="tabs new-label">
+                        <span>Contact & Links</span>
+                    </p>
+                </a>
+            </div>
 
-                <div class="contact" style="width:fit-content">
-                    <a href="contact/contact.html">
-                        <p class="tabs new-label">
-                            <span>Contact & Links</span>
-                        </p>
-                    </a>
-                </div>
+            <div class="projectsmain" style="width:fit-content">
+                <a href="projects/projects.html">
+                    <p class="tabs new-label">
+                        <span>Project Showcase</span>
+                    </p>
+                </a>
+            </div>
 
-                <div class="projectsmain" style="width:fit-content">
-                    <a href="projects/projects.html">
-                        <p class="tabs new-label">
-                            <span>Project Showcase</span>
-                        </p>
-                    </a>
-                </div>
+            <div class="projectsall" style="width:fit-content">
+                <a href="allprojects/allprojects.html">
+                    <p class="tabs new-label">
+                        <span>All Projects</span>
+                    </p>
+                </a>
+            </div>
 
-                <div class="projectsall" style="width:fit-content">
-                    <a href="allprojects/allprojects.html">
-                        <p class="tabs new-label">
-                            <span>All Projects</span>
-                        </p>
-                    </a>
-                </div>
-
-                <div class="gamesmods" style="width:fit-content">
-                    <a href="gamesandmods/gamesandmods.html">
-                        <p class="tabs new-label">
-                            <span>Games & Mods</span>
-                        </p>
-                    </a>
-                </div>
+            <div class="gamesmods" style="width:fit-content">
+                <a href="gamesandmods/gamesandmods.html">
+                    <p class="tabs new-label">
+                        <span>Games & Mods</span>
+                    </p>
+                </a>
+            </div>
 
 
-                <!--
-                <div class="writings" style="width:fit-content">
-                    <a href="writings/writings.html">
-                        <p class="tabs new-label">
-                            <span>Essays & Writings</span>
-                        </p>
-                    </a>
-                </div>
-                -->
+            <!--
+            <div class="writings" style="width:fit-content">
+                <a href="writings/writings.html">
+                    <p class="tabs new-label">
+                        <span>Essays & Writings</span>
+                    </p>
+                </a>
+            </div>
+            -->
 
-                <div class="books" style="width:fit-content">
-                    <a href="readinglist/readinglist.html">
-                        <p class="tabs new-label">
-                            <span>Reading List</span>
-                        </p>
-                    </a>
-                </div>
+            <div class="books" style="width:fit-content">
+                <a href="readinglist/readinglist.html">
+                    <p class="tabs new-label">
+                        <span>Reading List</span>
+                    </p>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="FunZone2">
+
+            <div class="UpdateTitle ">
+
+                <p class="UpdateText">Updates & Releases</p>
+                <hr>
 
             </div>
 
-            <div class="second">
-
-                <p class="feedTop">Updates & Releases</p>
-                <hr>
-
-                <div class="scroll">
+            <div class="Updates">
 
                     <!-- 
                         <div>
@@ -146,11 +148,12 @@
                         <p class="feedText">Not every hack has to be bad! Sometimes you just want to give someone some friendly advice! PSA is a USB Rubber Ducky script that gives an unlocked laptop a friendly reminder of the dangers of access :)</p>
                     </div>
 
-                </div>
-                
             </div>
-
+            
         </div>
-        
-    </body>
+
+    </div>
+
+</body>
+
 </html>
