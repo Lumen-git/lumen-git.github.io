@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="glider.ico">
 
     <script>
+
         if ( window.addEventListener ) {
             var kkeys = [], k = "38,38,40,40,37,39,37,39,66,65";
             window.addEventListener("keydown", function(e){
@@ -19,16 +20,44 @@
             }
             }, true);
         }
+
+        function closeNav() {
+            document.getElementById("myNav").style.display = "none";
+        }
+
+        function testDates() {
+            var date = new Date();
+            var day = date.getDate();
+            var month = date.getMonth() + 1;
+
+            if (day == 5 && month == 6){
+                document.getElementById("myNav").style.display = "block";
+            }
+        }
+
     </script>
 
 </head>
 
-<body style="padding: 0px; margin: 0px">
-    
+<body style="padding: 0px; margin: 0px" onload="testDates()">
+
+    <!-- Overlay -->
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <div class="overlay-content">
+            <p>SAVE
+            FERRIS</p>
+        </div>
+      
+      </div>
+
+    <!-- Main content-->
     <div class="containerHomepage">
 
         <div class="Main">
-            <p class="mainText">Hello, I'm <b>Aidan "Lumen" Moran</b>. I'm a <b>Computer Scientist</b>, <b>Chemist</b>, and general <b>Researcher</b> of many scientific fields. This is my little corner of the internet to host my portfolio, contact, and other bits I want to send out into the digital void. Welcome to my website.</p>
+                <p class="mainText">Hello, I'm <b>Aidan "Lumen" Moran</b>. I'm a <b>Computer Scientist</b>, <b>Creative</b>, and general <b>Researcher</b> of many scientific fields. This is my little corner of the internet to host my portfolio, contact, and other bits I want to send out into the digital void. Welcome to my website.</p>
             <hr>
         </div>
 
