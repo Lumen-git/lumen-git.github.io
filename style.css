@@ -272,18 +272,18 @@ a{
     content: '> Reading List';
   }
 
-  .merchant a p.new-label span{
+.merchant a p.new-label span{
     position: relative;
     content: 'Arcade Merchant';
+}
+  
+.merchant:hover a p.new-label span{
+      display: none;
   }
   
-  .merchant:hover a p.new-label span{
-      display: none;
-    }
-  
-  .merchant:hover a p.new-label:after{
+.merchant:hover a p.new-label:after{
       content: '> Arcade Merchant';
-    }
+  }
 
 .writings a p.new-label span{
   position: relative;
