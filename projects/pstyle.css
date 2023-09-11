@@ -1,0 +1,47 @@
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h3, p{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.title{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    margin: 1px 5px;
+}
+
+.basicText{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    margin: 1px 5px;
+}
+
+.block{
+    border: 2px;
+    border-style: solid;
+    margin: 1% 2%;
+    height: auto;
+    overflow: auto;
+}
+
+.rightText{
+    text-align: right;
+}
+
+.leftText{
+    margin-left: 5px;
+}
+
+.container{
+    display:contents;
+    word-wrap: anywhere;
+}
+
+a:hover {
+    color: #990099;
+  }

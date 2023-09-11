@@ -230,7 +230,7 @@ a{
   }
 
 .projectsmain:hover a p.new-label:after{
-    content: '> Project Showcase';
+    content: '> Work & Projects';
   }
 
   .projectsall a p.new-label span{
