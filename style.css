@@ -175,19 +175,7 @@ a{
   margin-bottom: 45px;
 }
 
-.writingname{
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  margin: 5px;
-  margin-left: 0px;
-  font-weight: bold;
-}
 
-.writingtext{
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  max-width: 45%;
-}
 
 @font-face {
   font-family: c64;
@@ -287,13 +275,13 @@ a{
 
 .writings a p.new-label span{
   position: relative;
-  content: 'Essays & Writings';
+  content: ' Writings';
 }
 .writings:hover a p.new-label span{
     display: none;
   }
 .writings:hover a p.new-label:after{
-    content: '> Essays & Writings';
+    content: '> Writings';
   }
 
 .feedTop{
