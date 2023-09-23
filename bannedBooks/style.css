@@ -1,0 +1,40 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a:hover {
+    color: #990099;
+  }
+  
+  a{
+    text-decoration: underline;
+  }
+
+.clump{
+  margin: 0px;
+}
+
+table{
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  width: 30vw;
+}
+
+td{
+  width: min-content;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+tr{
+  width: fit-content;
+}
+
+.TheTable {
+  width: 31vw;
+  overflow-x: auto;
+  overflow-y: scroll;
+  height: 50vh;
+}

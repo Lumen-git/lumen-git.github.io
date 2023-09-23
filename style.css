@@ -260,6 +260,19 @@ a{
     content: '> Reading List';
   }
 
+  .bannedBooks a p.new-label span{
+    position: relative;
+    content: 'Read Banned Books';
+  }
+  
+  .bannedBooks:hover a p.new-label span{
+      display: none;
+    }
+  
+  .bannedBooks:hover a p.new-label:after{
+      content: '> Read Banned Books';
+    }
+
 .merchant a p.new-label span{
     position: relative;
     content: 'Arcade Merchant';
