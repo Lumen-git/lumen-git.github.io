@@ -71,7 +71,7 @@ function storyController(trigger){ //MOAS - Mother Of All Switches
             bookmark2 = true;
             break;
         case (((trigger == "food") || (trigger == "drink")) && (foodClicks >= 20) && (drinkClicks >= 20) && (thinkClicks >= 35) && (!bookmark3)):
-            postStory(">It's a strange thing, your story. I haven't even started telling you it yet, but your still here, grinding away at this simplified life, waiting for a plot point, or an ending. But in a way, so am I. I'm glad we're experiencing this together. Your universe will expand again, soon.");
+            postStory(">It's a strange thing, your story. I haven't even started telling you it yet, but you're still here, grinding away at this simplified life, waiting for a plot point, or an ending. But in a way, so am I. I'm glad we're experiencing this together. Your universe will expand again, soon.");
             bookmark3 = true;
             jobSearch = true;
             break;
