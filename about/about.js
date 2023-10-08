@@ -20,7 +20,7 @@ function init(){
                 "Aidan is a computer scientist who thinks 1993's 'Doom' is the peak of game design.",
                 "Aidan is a computer scientist who falls in love too easily.",
                 "Aidan is a computer scientist who once had their entire garden eaten by a single deer.",
-                "Aidan is a computer scientist who onces bought and repaired a Commodore 64 only to find out copying Basic code from a book is very, very tedious.",
+                "Aidan is a computer scientist who once bought and repaired a Commodore 64 only to find out copying Basic code from a book is very, very tedious.",
                 "Aidan is a computer scientist who writes code like programming is putting together an Ikea flatpack.",
                 "Aidan is a computer scientist who has watched too much MacGyver.", 
                 "Aidan is a computer scientist who once went to class for the first time on the day of their midterm (and nailed it).",
@@ -31,7 +31,9 @@ function init(){
                 "Aidan is a computer scientist who is horrified of spiders.",
                 "Aidan is a computer scientist who can see sound.",
                 "Aidan is a computer scientist who every assumes is really good at chess for some reason but secretly doesn't understand chess. Not in the slightest.",
-                "Aidan is a computer scientist who forgot what cats were after getting their wisdom teeth out. Rediscovering their cat was wild."];
+                "Aidan is a computer scientist who forgot what cats were after getting their wisdom teeth out. Rediscovering their cat was wild.",
+                "Aidan is a computer scientist who heard Cave Johnson's Lemon Rant for Portal 2 at a too young age. It became deeply lodged in their personality and explains why they are the way they are.",
+                "Aidan is a computer scientist who thinks Who's On First is the peak of all comedy."];
     let target = document.getElementById("randomize");
     target.innerHTML = lines[Math.floor(Math.random()*lines.length)];
 }
