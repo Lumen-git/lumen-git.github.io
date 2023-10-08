@@ -11,7 +11,7 @@ function init(){
                 "Aidan is a computer scientist who once published a game that had 3 separate misspellings of the word 'remember' in.",
                 "Aidan is too afraid to be an artist, so they disguise themself as a computer scientist and call it a day.",
                 "Aidan is a nerd with far too much free time.",
-                "Aidan is a computer scientist who once read a satirical research paper about making the worse hard drive possible and has since made that their entire design philosophy.",
+                "Aidan is a computer scientist who once read a satirical research paper about making the worst hard drive possible and has since made that their entire design philosophy.",
                 "Aidan is a computer scientist who once did surgery on themself to put a microchip in their hand. They also have 3 tattoos and are afraid of getting shots.",
                 "Aidan is a computer scientist who once played the 1985 arcade game 'Gauntlet' with their dad and hasn't stepped away from the screen since.",
                 "Aidan isn't fully sure what to call themself, but computer scientist sounds pretty good.",
