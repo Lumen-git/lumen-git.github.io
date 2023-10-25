@@ -12,7 +12,7 @@ function init(){
                 "Aidan is too afraid to be an artist, so they disguise themself as a computer scientist and call it a day.",
                 "Aidan is a nerd with far too much free time.",
                 "Aidan is a computer scientist who once read a satirical research paper about making the worst hard drive possible and has since made that their entire design philosophy.",
-                "Aidan is a computer scientist who once did surgery on themself to put a microchip in their hand. They also have 3 tattoos and are afraid of getting shots.",
+                "Aidan is a computer scientist who once did surgery on themself to put a microchip in their hand. They also have 5 tattoos and are afraid of getting shots.",
                 "Aidan is a computer scientist who once played the 1985 arcade game 'Gauntlet' with their dad and hasn't stepped away from the screen since.",
                 "Aidan isn't fully sure what to call themself, but computer scientist sounds pretty good.",
                 "Aidan is a computer scientist who if they hear the joke 'You're nonbinary? Well how can you study computers then?!' one more time they will detonate.",
@@ -30,10 +30,15 @@ function init(){
                 "Aidan is a computer scientist who is either colorblind or doesn't understand the color green on a fundamental level and either option scares them.",
                 "Aidan is a computer scientist who is horrified of spiders.",
                 "Aidan is a computer scientist who can see sound.",
-                "Aidan is a computer scientist who every assumes is really good at chess for some reason but secretly doesn't understand chess. Not in the slightest.",
+                "Aidan is a computer scientist who everyone assumes is really good at chess for some reason but secretly doesn't understand chess. Not in the slightest.",
                 "Aidan is a computer scientist who forgot what cats were after getting their wisdom teeth out. Rediscovering their cat was wild.",
-                "Aidan is a computer scientist who heard Cave Johnson's Lemon Rant for Portal 2 at a too young age. It became deeply lodged in their personality and explains why they are the way they are.",
-                "Aidan is a computer scientist who thinks Who's On First is the peak of all comedy."];
+                "Aidan is a computer scientist who heard Cave Johnson's Lemon Rant for Portal 2 at a too young age. It became deeply lodged in their psyche and explains why they are the way they are.",
+                "Aidan is a computer scientist who thinks Who's On First is the peak of all comedy.",
+                "Aidan is a computer scientist who thinks Lisp/Scheme/Racket HAS to be a joke.",
+                "Aidan is a computer scientist who would be the first to die in a horror movie.",
+                "Aidan is a computer scientist who understands they really shouldn't try to build a particle accelerator in their bedroom, but that won't stop them from trying!",
+                "Aidan once had dinner with the actor who played Columbo while on vacation in New Jersey. That's not true but imagine how cool that would be, right?",
+                "Aidan is a computer scientist who is just winging it."];
     let target = document.getElementById("randomize");
     target.innerHTML = lines[Math.floor(Math.random()*lines.length)];
 }
