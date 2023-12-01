@@ -9,3 +9,22 @@ a:hover {
 a{
   text-decoration: underline;
 }
+
+td{
+  padding-left: 2px;
+  padding-bottom: 2px;
+}
+
+.topRow{
+  font-size: 20px;
+}
+
+.topRowtd{
+  border: 2px solid #000000;
+  border-width: 0px 0px 1px 0px;
+  background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+  background-color: #dcdcdc;
+}
