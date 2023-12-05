@@ -33,13 +33,27 @@
             if (day == 5 && month == 6){
                 document.getElementById("myNav").style.display = "block";
             }
+
+            if ((day <= 15 || day >= 25) && month == 12){
+                var childrenDiv = document.getElementsByClassName("tabs")
+                for (var i = 0; i < childrenDiv.length; i++){
+                    childrenDiv[i].style.color = "red";
+                }
+                document.getElementsByClassName("FunZone2")[0].style.color = "green"
+                document.getElementById("mainText").style.color = "red"
+                var bolds = document.getElementsByClassName("mainBold");
+                for (var i = 0; i < bolds.length; i++){
+                    bolds[i].style.color = "green";
+                }
+            }
+
         }
 
     </script>
 
 </head>
 
-<body style="padding: 0px; margin: 0px" onload="testDates()">
+<body style="padding: 0px; margin: 0px" onload="testDates()" id="theBody">
 
     <!-- Overlay -->
     <div id="myNav" class="overlay">
@@ -56,8 +70,8 @@
     <!-- Main content-->
     <div class="containerHomepage">
 
-        <div class="Main">
-                <p class="mainText">Hello, I'm <b>Aidan "Lumen" Moran</b>. I'm a <b>Computer Scientist</b>, <b>Creative</b>, and general <b>Researcher</b> of many scientific fields. This is my little corner of the internet to host my portfolio, contact, writings, games, and other bits I want to send out into the digital void. Welcome to my website.</p>
+        <div class="Main" id="mainText">
+                <p class="mainText">Hello, I'm <b class="mainBold">Aidan "Lumen" Moran</b>. I'm a <b class="mainBold">Computer Scientist</b>, <b class="mainBold">Creative</b>, and general <b class="mainBold">Researcher</b> of many scientific fields. This is my little corner of the internet to host my portfolio, contact, writings, games, and other bits I want to send out into the digital void. Welcome to my website.</p>
             <hr>
             <!--- <marquee style="font-size: 26px; font-weight: bold; color: red;">BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE</marquee> -->
         </div>
