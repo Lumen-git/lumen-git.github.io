@@ -34,7 +34,7 @@
                 document.getElementById("myNav").style.display = "block";
             }
 
-            if ((day >= 14 || day <= 25) && month == 12){
+            if ((day >= 14 && day <= 25) && month == 12){
                 var childrenDiv = document.getElementsByClassName("tabs")
                 for (var i = 0; i < childrenDiv.length; i++){
                     childrenDiv[i].style.color = "red";
