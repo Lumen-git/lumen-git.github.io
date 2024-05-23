@@ -1,0 +1,26 @@
+.title{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.bodyText{
+    font-size: large;
+}
+
+.cell{
+    border: 2px;
+    border-style: solid;
+    margin: 6px;
+    border-color: gray;
+    display: flex;
+    flex-direction: row;
+}
+
+.cell p{
+    margin: 15px;
+}
+
+.cell img{
+    float: left;
+    height: 100%;
+}

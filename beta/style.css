@@ -1,0 +1,96 @@
+html {
+   min-height: 100%;
+}
+
+body {
+    size: 100%;
+}
+
+.taskBar{
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 28px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.start {
+    position:fixed;
+    bottom: 2px;
+    left: 3px;
+    z-index: 2;
+}
+
+.clock {
+    position:fixed;
+    bottom: 2px;
+    right: 3px;
+    z-index: 2;
+}
+.clockText {
+    font-family: Desktop;
+    font-size: medium;
+    position:fixed;
+    bottom: -14px;
+    right: 6px;
+    z-index: 3;
+}
+
+.desktop{
+    height: 90vh;
+    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    grid-auto-flow: column;
+    justify-items: left;
+    align-items: top;
+}
+
+.desktopIcon{
+    width: auto;
+    height: 96px;
+    image-rendering: pixelated;
+}
+
+.desktopNode {
+    text-align: center;
+    font-family: Desktop;
+    color: #fff;
+}
+
+@font-face {
+    font-family: "Desktop";
+    src: url(fonts/W95FA.woff) format("woff");
+}
+
+.feedTitle{
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0px;
+}
+
+.feedText{
+    font-size: 22px;
+    margin: 0px;
+}
+
+.contactText{
+    font-size: medium;
+}
+
+.contactText a:link {
+    color: blue;
+}
+
+.contactText a:hover {
+    color: black;
+}
+
+.contactText a:visited{
+    color: blueviolet;
+}

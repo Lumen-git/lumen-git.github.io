@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>LumenOS</title>
+</head>
+
+
+<body style="background-color: #378182;">
+
+    <script src="../../bits.js"></script>
+
+    <script type="text/javascript">
+        window.onload = setTime;
+    </script>
+
+
+    <div class="window" style="width: 100%; height: calc(99dvh - 40px);">
+
+        <div class="title-bar">
+            <div class="title-bar-text">A Town With a River</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" disabled></button>
+                    <button aria-label="Maximize" disabled></button>
+                    <a href="../"><button aria-label="Close"></button></a>
+                </div>
+            </div>
+
+            <div class="window-body" style="height: calc(100% - 40px); overflow-y: scroll;">
+
+                <ul class="tree-view">
+                
+                    <div style="align-items: center;">
+                        <img src="images/1.png">
+                        <img src="images/2.PNG">
+                        <img src="images/3.PNG">
+                        <img src="images/4.PNG">
+                    </div>
+                    
+                    <div>
+                        <p class="text">This short, retro, fetch-questy RPG is all about saving the town, classic Gameboy gameplay (with a hint of flash), and definitely not a story about anxiety and fear of the unknown. There's no strange horrors waiting for you at the end. There are no incomplete plot threads and you won't be left with any unanswered questions.</p>
+                        <p  class="text"><i>Everything will be alright.</i></p>
+                        <p class="text"">Special thanks to MaterialFuture, Pixel Creation, Kemono, and KnoblePersona for their tile sets and assets, DeerTears and krümel for their music, and Soully for the Gameboy manual template!</p>
+                    </div>
+                
+                    <div>
+                        <p  class="text"><a href="../../atwar">Play in browser by clicking here!</a></p>
+                        <p  class="text"><a href="ATownWithARiver.pdf" target="_blank" type="application/pdf">Download the manual for controls and credits by clicking here!</a></p>
+                        <p class="text">Or download Gameboy Color ROMs, Analogue Pocket files, manuals, and donate on itch.io!</p>
+                        <iframe src="https://itch.io/embed/2156116?linkback=true&amp;bg_color=d5ffd1&amp;fg_color=000000&amp;link_color=000000&amp;border_color=529365" width="552" height="167" frameborder="0"><a href="https://itslumen.itch.io/a-town-with-a-river">A Town With A River by Lumen</a></iframe>
+                    </div>
+
+                </ul>
+
+        </div>
+    </div>
+
+    <img src="../../images/start.png" class="start">
+    <div class="clockText" style="z-index: 3">
+        <p id="clockText">xx:xx AM</p>
+    </div>
+    <img src="../../images/clock.png" class="clock">
+    <img src="../../images/taskBar.png" class="taskBar">
+
+</body>
+
+
+</html>

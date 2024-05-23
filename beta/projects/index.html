@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>LumenOS</title>
+</head>
+
+
+<body style="background-color: #378182;">
+
+    <script src="../bits.js"></script>
+
+    <script type="text/javascript">
+        window.onload = setTime;
+    </script>
+
+    <div class="window" style="width: 100%; height: calc(99dvh - 40px);">
+
+        <div class="title-bar">
+            <div class="title-bar-text">Work & Projects</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" disabled></button>
+                    <button aria-label="Maximize" disabled></button>
+                    <a href="../"><button aria-label="Close"></button></a>
+                </div>
+            </div>
+
+            <div class="window-body" style="height: calc(100% - 40px); overflow-y: scroll;">
+
+                <ul class="tree-view">
+
+                    <div class="cell">
+                        <a href="https://github.com/Lumen-git/ThingsAI" target="_blank"><img src="images/thingsai.png" /></a>
+                        <div class="innerCell">
+                            <p class="title">ThingsAI</p>
+                            <p class="bodyText">ThingsAI takes a collection of smaller images and icons (things) and uses an evolution algorithm to create a dynamic mosaic of a larger input image. To the left is the Mona Lisa created using the textures from Minecraft.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="cell">
+                        <a href="https://github.com/Lumen-git/TheToyBox" target="_blank"><img src="images/toybox.PNG" /></a>
+                        <div class="innerCell">
+                            <p class="title">The Toybox</p>
+                            <p class="bodyText">The Toybox is a collection of small programs that experiment in computer science and art. Some use visual tools such as p5js, classic tech like C46 Basic, or esolangs. To the right is a demo of Perlin noise to generate terrain and control the motions of a ship.</p>
+                        </div>
+                    </div>
+
+                    <div class="cell">
+                        <a href="https://github.com/Lumen-git/Simple_ECA" target="_blank"><img src="images/simpleeca.png"></a>
+                        <div class="innerCell">
+                        <p class="title">Simple ECA</p>
+                        <p class="bodyText">Simple ECA that takes a Wolfram code and a number of generations and simulates an elementary cellular automata. It then shows a matplotlib graph of all generations</p>
+                    </div>
+                </div>
+
+                    <div class="cell">
+                        <a href="https://github.com/Lumen-git/RubberDucky-DropZipExecute" target="_blank"><img src="images/dropzipexecute.png"></a>
+                        <div class="innerCell">
+                        <p class="title">DROP-ZIP-EXECUTE</p>
+                        <p class="bodyText">DROP-ZIP-EXECUTE is a USB Rubber Ducky payload that 1) Downloads a zip file (tested with Dropbox) 2) Unzips the contents to a given folder and 3) Runs a contained file. This becomes extra powerful when the software is not executed directly, but first moved about the computer and made hidden using a Batch or Bash file, then executed to hide all tracks.</p>
+                    </div>
+                </div>
+
+                    <div class="cell">
+                        <a href="https://github.com/Lumen-git/3DGardenLabels" target="_blank"><img src="images/garden.png"></a>
+                        <div class="innerCell">
+                        <p class="title">3D Garden Labels</p>
+                        <p class="bodyText">This is a collection of SVG and Illustrator files that can be laser cut or 3D printed to create unique crop labels for your garden. (sneak attack I'm also a Botanist!)</p>
+                    </div>
+                </div>
+
+                    <div class="cell" style="border: 0px;">
+                        <div class="innerCell">
+                        <p class="title">These are just some of the highlights and personal favorites. All available code I've written is <a href="https://github.com/Lumen-git" target="_blank" style="color: blue;">on my GitHub.</a></p>
+                    </div>
+
+                </ul>
+
+        </div>
+    </div>
+
+    <img src="../images/start.png" class="start">
+    <div class="clockText" style="z-index: 3">
+        <p id="clockText">xx:xx AM</p>
+    </div>
+    <img src="../images/clock.png" class="clock">
+    <img src="../images/taskBar.png" class="taskBar">
+
+</body>
+
+
+</html>

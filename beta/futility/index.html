@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <title>Futility</title>
+</head>
+
+<body style="margin: 0px 2px;">
+    <script src="futility.js"></script>
+
+    <script type="text/javascript">
+        window.onload = intro; <!-- change to intro before launch -->
+    </script>
+
+    <div class="container">
+
+        <div class="Buttons" id="buttons">
+            <p id="thinkButton" style="visibility: hidden;"><button id="thinkButtonProper" onclick="thinkClick()">Think</button> <span id="thinkBar"><--------------------></span></p>
+            <p id="createButton" style="visibility: hidden;"><button id="createButtonProper" onclick="createClick()">Create</button> <span id="createBar"><--------------------></span></p>
+            <p id="sleepButton" style="visibility: hidden;"><button id="sleepButtonProper" onclick="sleepClick()">Sleep</button> <span id="sleepBar"><--------------------></span></p>
+            <p id="eatButton" style="visibility: hidden;"><button id="eatButtonProper" onclick="eatClick()">Eat</button> <span id="eatBar"><--------------------></span></p>
+            <p id="drinkButton" style="visibility: hidden;"><button id="drinkButtonProper" onclick="drinkClick()">Drink Water</button> <span id="drinkBar"><--------------------></span></p>
+            <p id="workButton" style="visibility: hidden;"><button id="workButtonProper" onclick="workClick()">Work</button> <span id="workBar"><--------------------></span></p>
+            <p id="meditateButton" style="visibility: hidden;"><button id="meditateButtonProper" onclick="meditateClick()">Meditate</button> <span id="meditateBar"><--------------------></span></p>
+            <p id="hobbyButton" style="visibility: hidden;"><button id="hobbyButtonProper" onclick="hobbyClick()">Do Hobby</button> <span id="hobbyBar"><--------------------></span></p>
+            <p id="classButton" style="visibility: hidden;"><button id="classButtonProper" onclick="classClick()">Go To Class</button> <span id="classBar"><--------------------></span></p>    <!--  -2 Energy / -1 Motivation, -1 Joy (until you meet girl, then 0, -4 after breakup for n times, then back to -1), 15 seconds --->
+            <p id="loveButton" style="visibility: hidden;"><button onclick="loveClick()">Fall In Love</button> <span id="loveBar"><--------------------></span></p> <!-- 30 seconds -->
+            <p id="dateButton" style="visibility: hidden;"><button onclick="dateClick()" disabled id="dateButtonProper">Go On Date</button> <span id="dateBar"><--------------------></span></p> <!--  +10 Joy (decreases over time) / -1 Money, 15 seconds --->
+            <p id="carryOnButton" style="visibility: hidden;"><button onclick="carryOnClick()">Carry On</button> <span id="carryOnBar"><--------------------></span></p>
+            <p id="restButton" style="visibility: hidden;"><button onclick="restClick()">Rest</button></p>
+        </div>
+
+        <div class="Status" id="status">
+            <p id="mainStatus" style="visibility: hidden;">You are not</p>
+            <br>
+            <p id="ideaCount" style="visibility: hidden;">Idea: 0</p>
+            <p id="creativityCount" style="visibility: hidden;">Creativity: 0</p>
+            <p id="energyCount" style="visibility: hidden;">Energy: 0</p>
+            <p id="foodCount" style="visibility: hidden;">Food: 0</p>
+            <p id="drinkCount" style="visibility: hidden;">Drink: 0</p>
+            <p id="moneyCount" style="visibility: hidden;">Money: 0</p>
+            <p id="joyCount" style="visibility: hidden;">Joy: 0</p>
+            <p id="motivationCount" style="visibility: hidden;">Motivation: 0</p>
+        </div>
+
+        <div class="Story" id="story">
+            
+        </div>
+
+      </div>
+</body>
+
+</html>

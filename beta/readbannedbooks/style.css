@@ -1,0 +1,44 @@
+.clump{
+    margin: 0px;
+}
+  
+table{
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 30vw;
+}
+  
+td{
+    width: min-content;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+  
+tr{
+    width: fit-content;
+}
+  
+.TheTable {
+    width: 31vw;
+    overflow-x: auto;
+    overflow-y: scroll;
+    height: 50vh;
+}
+
+.link:link {
+    color: blue;
+}
+
+.link:hover {
+    color: black;
+}
+
+.link:visited{
+    color: blueviolet;
+}
+
+.mainText{
+    font-size: medium;
+}

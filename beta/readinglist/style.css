@@ -1,0 +1,21 @@
+.booktitle{
+    font-weight: bold;
+    font-size: 36px;
+    margin: 5px;
+}
+  
+.bookauthor{
+    font-style: italic;
+    font-size: 28px;
+    margin: 5px;
+}
+  
+.bookdesc{
+    font-size: 24px;
+    margin: 5px;
+}
+  
+.bookcrate{
+    margin-top: 15px;
+    margin-bottom: 45px;
+}

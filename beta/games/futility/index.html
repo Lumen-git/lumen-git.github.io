@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>LumenOS</title>
+</head>
+
+
+<body style="background-color: #378182;">
+
+    <script src="../../bits.js"></script>
+
+    <script type="text/javascript">
+        window.onload = setTime;
+    </script>
+
+
+    <div class="window" style="width: 100%; height: calc(99dvh - 40px);">
+
+        <div class="title-bar">
+            <div class="title-bar-text">Futility</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" disabled></button>
+                    <button aria-label="Maximize" disabled></button>
+                    <a href="../"><button aria-label="Close"></button></a>
+                </div>
+            </div>
+
+            <div class="window-body" style="height: calc(100% - 40px); overflow-y: scroll;">
+
+                <ul class="tree-view">
+
+                    <div>
+                        <img src="images/fultilty.png">
+                        <img src="images/WACSTS.png">
+                        <img src="images/quotes.png">
+                    </div>
+
+                    <br>
+
+                    <a href="../../futility/" class="link"><p class="text" style="font-size: 30px; margin-bottom:0px;">>> Click here to play Futility <<</p></a>
+
+                    <br>
+                    <br>
+
+                    <p class="text"><i>Futility</i> is a game about moving through the drudgery of life, no matter how meaningless or hopeless it seems.</p>
+
+                    <p class="text">Special thanks to <b>Aaron Reed</b> and his book <i>50 Years Of Text Games</i> for making me love text games, <b>Frank Lantz</b> & <i>Universal Paperclips</i> for showing me a few GUI elements are all you need for a great game (and teaching me JavaScript), and <b>Davey Wreden</b> & <i>The Beginner's Guide</i> for making me fall in love with narrative games. Also thanks to the songwriters and poets below who's words inspired parts of the story.</p>
+
+                    <br>
+                    <hr>
+                    <br>
+
+                    <p class="text">Quote Attributions (semi-censored for spoilers):</p>
+                    <p class="text">"I'll always struggle to think..." - <i>Gang of Youths, Keep Me In The Open</i></p>
+                    <p class="text">"Love in..." - <i>Sir Sly, I.M.G.</i></p>
+                    <p class="text">"The writing's on the wall..." - <i>OK-GO, The Writing's On The Wall</i></p>
+                    <p class="text">"Today, of all days, see how..." - <i>Gang Of Youths, Achilles Come Down</i></p>
+                    <p class="text">"Look on my Works..." - <i>Percy Bysshe Shelley, Ozymandias</i></p>
+                    <p class="text">"Feel your breath course ..." - <i>Gang Of Youths, Achilles Come Down</i></p>
+                    <p class="text">"Tell the panic it can wait..." - <i>Sir Sly, d00msday</i></p>
+                    <p class="text">"That's life..." - <i>Frank Sinatra, That's Life</i></p>
+                    <p class="text">"O what made..." - <i>Wilfred Owen, Futility</i> (Shockingly, this poem having the same name as the game is 100% coincidence. I loved this line, but didn't know it came from a poem called <i>Futility</i> until it was already in the game and the game was already named!)</p>
+
+
+                </ul>
+
+        </div>
+    </div>
+
+    <img src="../../images/start.png" class="start">
+    <div class="clockText" style="z-index: 3">
+        <p id="clockText">xx:xx AM</p>
+    </div>
+    <img src="../../images/clock.png" class="clock">
+    <img src="../../images/taskBar.png" class="taskBar">
+
+</body>
+
+
+</html>

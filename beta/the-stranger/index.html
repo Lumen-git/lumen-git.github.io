@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="thestranger.png">
+    <title>The Stranger</title>
+</head>
+
+<body>
+    <script src="thestranger.js"></script>
+
+    <script type="text/javascript">
+        window.onload = startup; <!-- change to intro before launch -->
+    </script>
+
+    <div id="gameEnv" style="opacity: 1;">
+        <p id="story">The stranger is outside again.</p>
+        <br id="storyBR">
+        <p id="button1" onclick="button1click()">>Turn the outside lights on</p>
+        <p id="button2" onclick="letIn()">>Let the stranger in</p>
+        <p id="button3" onclick="button3click()"></p>
+    </div>
+</body>
+
+</html>

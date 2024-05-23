@@ -1,0 +1,19 @@
+.text{
+    font-size: large;
+}
+
+.text a:link {
+    color: blue;
+}
+
+.text a:visited {
+    color: blueviolet;
+}
+
+.link:link {
+    color: blue;
+}
+
+.link:visited {
+    color: blueviolet;
+}

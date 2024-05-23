@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+
+    <title>LumenOS</title>
+</head>
+
+
+<body style="background-color: #378182;">
+    <script src="../bits.js"></script>
+
+    <script type="text/javascript">
+        window.onload = setTime;
+    </script>
+    
+    <div class="window" style="width: 100%; height: calc(99dvh - 40px);">
+
+        <div class="title-bar">
+            <div class="title-bar-text">Reading List</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" disabled></button>
+                    <button aria-label="Maximize" disabled></button>
+                    <a href="../"><button aria-label="Close"></button></a>
+                </div>
+            </div>
+
+            <div class="window-body" style="height: calc(100% - 40px);">
+
+                <p class="bookauthor">Much of the work I do is influenced by the books I read. Here are some of my favorites that I highly suggest you read, in no particular order.</p>
+
+                <ul class="tree-view" style="height: calc(100% - 40px); overflow-y: scroll;">
+
+                    <div class="bookcrate">
+                        <p class="booktitle">What if?</p>
+                        <p class="bookauthor">Randall Munroe</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">How to Invent Everything</p>
+                        <p class="bookauthor">Ryan North</p>
+                        <p class="bookdesc"></p>
+                        </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Permanent Record</p>
+                        <p class="bookauthor">Edward Snowden</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">American Kingpin</p>
+                        <p class="bookauthor">Nick Bolton</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">The Man Who Was Thursday</p>
+                        <p class="bookauthor">G. K. Chesterton</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Solutions and Other Problems</p>
+                        <p class="bookauthor">Allie Brosh</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Pihkal</p>
+                        <p class="bookauthor">Alexander and Ann Shulgin</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">The Hitchhiker's Guide to the Galaxy <span style="font-weight: normal;">and the rest of the Hitchhiker's series</span></p>
+                        <p class="bookauthor">Douglas Adams</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">There is no Antimemetics Division</p>
+                        <p class="bookauthor">qntm</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">How to Live Safely in a Science Fictional Universe</p>
+                        <p class="bookauthor">Charles Yu</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">On a Sunbeam</p>
+                        <p class="bookauthor">Tillie Walden</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Cult of the Dead Cow</p>
+                        <p class="bookauthor">Joseph Menn</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Things to Make and do in the Fourth Dimension</p>
+                        <p class="bookauthor">Matt Parker</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Surely You're Joking Mr. Feynman</p>
+                        <p class="bookauthor">Richard Feynman</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">We Have No Idea</p>
+                        <p class="bookauthor">Jorge Cham</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Steal This Computer 4.0</p>
+                        <p class="bookauthor">Wallace Wang</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">V for Vendetta</p>
+                        <p class="bookauthor">Alan Moore</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Every Tool's a Hammer</p>
+                        <p class="bookauthor">Adam Savage</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">I, Robot <span style="font-weight: normal;"> or </span> The Complete Robot</p>
+                        <p class="bookauthor">Isaac Asimov</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Do Androids Dream of Electric Sheep?</p>
+                        <p class="bookauthor">Philip K. Dick</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Operation White Rabbit</p>
+                        <p class="bookauthor">Dennis McDougal</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Tales From the Loop</p>
+                        <p class="bookauthor">Simon Stålenhag</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Killer Candy</p>
+                        <p class="bookauthor">Jason Murphy</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Watchmen</p>
+                        <p class="bookauthor">Alan Moore</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Masters of Doom</p>
+                        <p class="bookauthor">David Kushner</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Voices From the Radium Age</p>
+                        <p class="bookauthor">Joshua Glenn</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">50 Years of Text Games</p>
+                        <p class="bookauthor">Aaron A. Reed</p>
+                        <p class="bookdesc"></p>
+                    </div>
+                
+                    <div class="bookcrate"> 
+                        <p class="booktitle">It's Lonely as the Centre of the Earth</p>
+                        <p class="bookauthor">Zoe Thorogood</p>
+                        <p class="bookdesc"></p>
+                    </div>
+
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Biopunk</p>
+                        <p class="bookauthor">Marcus Wohlson</p>
+                        <p class="bookdesc"></p>
+                    </div>
+
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Cat Pictures Please and Other Stories</p>
+                        <p class="bookauthor">Naomi Kritzer</p>
+                        <p class="bookdesc"></p>
+                    </div>
+
+                    <div class="bookcrate"> 
+                        <p class="booktitle">House of Leaves</p>
+                        <p class="bookauthor">Mark Z. Danielewski</p>
+                        <p class="bookdesc"></p>
+                    </div>
+
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Fuck Yeah, Video Games</p>
+                        <p class="bookauthor">Daniel Hardcastle</p>
+                        <p class="bookdesc"></p>
+                    </div>
+
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Ready Player One</p>
+                        <p class="bookauthor">Ernest Cline</p>
+                        <p class="bookdesc"></p>
+                    </div>
+
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Great Falls, MT</p>
+                        <p class="bookauthor">Reggie Watts</p>
+                        <p class="bookdesc"></p>
+                    </div>
+
+                    <div class="bookcrate"> 
+                        <p class="booktitle">The Anthropocene Reviewed</p>
+                        <p class="bookauthor">John Green</p>
+                        <p class="bookdesc"></p>
+                    </div>
+
+                    <div class="bookcrate"> 
+                        <p class="booktitle">Several People Are Typing</p>
+                        <p class="bookauthor">Calvin Kasulke</p>
+                        <p class="bookdesc"></p>
+                    </div>
+
+                </ul>
+
+        </div>
+    </div>
+
+    <img src="../images/start.png" class="start">
+    <div class="clockText" style="z-index: 3">
+        <p id="clockText">xx:xx AM</p>
+    </div>
+    <img src="../images/clock.png" class="clock">
+    <img src="../images/taskBar.png" class="taskBar">
+
+</body>
+
+
+</html>

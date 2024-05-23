@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>LumenOS</title>
+</head>
+
+
+<body style="background-color: #378182;">
+
+    <script src="../bits.js"></script>
+
+    <script type="text/javascript">
+        window.onload = setTime;
+    </script>
+
+
+    <div class="window" style="width: 100%; height: calc(99dvh - 40px);">
+
+        <div class="title-bar">
+            <div class="title-bar-text">Games & Mods</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" disabled></button>
+                    <button aria-label="Maximize" disabled></button>
+                    <a href="../"><button aria-label="Close"></button></a>
+                </div>
+            </div>
+
+            <div class="window-body" style="height: calc(100% - 40px); overflow-y: scroll;">
+
+                <ul class="tree-view">
+
+                    <p class="titleText">Games</p>
+                    <br>
+
+                    <div class="container">
+                        <a href="atwar/">
+                            <div class="first">
+                                    <img src="images/ATWAR.png">
+                                    <p class="projecttext">A Town With A River</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+
+                    <p class="titleText">Text Games & IF</p>
+                    <br>
+
+                    <div class="container">
+                        <a href="futility/">
+                            <div class="first">
+                                <img src="images/futility.png">
+                                <p class="projecttext">Futility</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+
+                    <p class="titleText">Doom WADs</p>
+                    <br>
+
+                    <div class="container">
+                        <a href="https://www.moddb.com/mods/backdooms">
+                            <div class="first">
+                                    <img src="images/DoomGuyLostInBackrooms.png">
+                                    <p class="projecttext">Backdooms</p>
+                            </div>
+                            </a>
+                        </div>
+
+
+                    <br>
+                    <hr>
+                    <br>
+        
+                    <p class="titleText">Minigames & Demos</p>
+                    <br>
+
+                    <div class="container">
+                        <a href="ifasd/">
+                            <div class="first">
+                                <img src="./images/ifasd.png" width="300" height="300">
+                                <p class="projecttext">Invader From Another (Spatial) Dimension</p>
+                            </div>
+                        </a>
+                        <a href="../the-stranger/">
+                            <div class="second">
+                                <img src="./images/TheStrangerMain.png" width="300" height="300">
+                                <p class="projecttext">The Stranger</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <br>
+                    <hr>
+                    <br>
+        
+                    <p class="titleText">Tests & Miscellaneous Bits</p>
+                    <br>
+
+                    <div class="container">
+                        <a href="https://github.com/Lumen-git/The-Lab/tree/main">
+                            <div class="first">
+                                    <img src="images/thelab.png" width="300" height="300">
+                                    <p class="projecttext">The Lab</p>
+                            </div>
+                            </a>
+                        </div>
+
+                </ul>
+
+        </div>
+    </div>
+
+    <img src="../images/start.png" class="start">
+    <div class="clockText" style="z-index: 3">
+        <p id="clockText">xx:xx AM</p>
+    </div>
+    <img src="../images/clock.png" class="clock">
+    <img src="../images/taskBar.png" class="taskBar">
+
+</body>
+
+
+</html>
