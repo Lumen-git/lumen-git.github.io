@@ -62,10 +62,8 @@ body {
     font-family: Desktop;
     color: #fff;
 }
-
-@font-face {
-    font-family: "Desktop";
-    src: url("fonts/W95FA.woff") format("woff");
+*{
+	font-family: Pixelated MS Sans Serif;
 }
 
 .feedTitle{
