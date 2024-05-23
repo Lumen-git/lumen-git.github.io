@@ -65,7 +65,7 @@ body {
 
 @font-face {
     font-family: "Desktop";
-    src: url(fonts/W95FA.woff) format("woff");
+    src: url("fonts/W95FA.woff") format("woff");
 }
 
 .feedTitle{
