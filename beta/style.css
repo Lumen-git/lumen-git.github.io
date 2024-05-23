@@ -63,7 +63,7 @@ body {
     color: #fff;
 }
 *{
-	font-family: Pixelated MS Sans Serif;
+	font-family: Pixelated MS Sans Serif !important;
 }
 
 .feedTitle{
