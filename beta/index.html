@@ -16,6 +16,13 @@
 
     <script type="text/javascript">
         window.onload = initHome;
+      
+        let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+        if (isMobile) {
+            console.log("Mobile detected")
+            window.location.href = "/beta/mobile";
+        }
     </script>
     
     <div class="window" style="width: 40%; height: fit-content; position: absolute; left: 15%; top: 8%;" id="main">
