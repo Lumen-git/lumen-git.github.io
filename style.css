@@ -1,372 +1,122 @@
-.containerHomepage {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: min-content auto;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Main Main"
-      "FunZone1 FunZone2";
+html {
+   min-height: 100%;
+}
+
+body {
+    size: 100%;
+}
+
+.taskBar{
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
     width: 100%;
-    height: 100vh;
-    margin: 0px;
-  }
-
-.mainText{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 58px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-  
-.Main { 
-    grid-area: Main;
-    position: relative;
-}
-  
-.FunZone1 { 
-    grid-area: FunZone1;
-}
-  
-.FunZone2 {
-    grid-area: FunZone2; 
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: min-content 1fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "UpdateTitle"
-      "Updates"; 
-      overflow-y: scroll;
-  }
-
-
-.UpdateTitle { 
-    grid-area: UpdateTitle; 
+    height: 28px;
+    padding: 0%;
+    margin: 0%;
 }
 
-.UpdateText{
-    font-family: Century Gothic, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    margin: 0px;
+.start {
+    position:fixed;
+    bottom: 2px;
+    left: 3px;
+    z-index: 2;
 }
 
-.Updates { 
-    grid-area: Updates; 
-    overflow-y: scroll;
+.clock {
+    position:fixed;
+    bottom: 2px;
+    right: 3px;
+    z-index: 2;
 }
-  
-a{
-    text-decoration: none;
-    color: black;
-}
-
-.tabs{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 36px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.clockText {
+    font-family: Desktop;
+    font-size: medium;
+    position:fixed;
+    bottom: -14px;
+    right: 6px;
+    z-index: 3;
 }
 
-.subpage{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 56px;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    float: left;
+.desktopLeft{
+    height: 90vh;
+    width: 50%;
+    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    grid-auto-flow: column;
+    justify-items: left;
+    align-items: top;
+    position: absolute;
 }
 
-.subtext{
-    font-family: Century Gothic, Arial, sans-serif;
-    font-size: 24px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    clear: left;
+.desktopRight{
+    height: 90vh;
+    width: 50%;
+    margin-bottom: 28px;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+    grid-auto-flow: column;
+    align-items: top;
+    position: absolute;
+    right: 0px;
 }
 
-.projectdiv{
-  margin: 60px 200px 60px 200px;
-  display: grid;
-  object-fit: contain;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px 300px;
-  gap: 100px;
-  column-gap: auto;
+.desktopIcon{
+    width: auto;
+    height: 96px;
+    image-rendering: pixelated;
+    z-index: 0;
 }
 
-.projectimage{
-  object-fit: contain;
-  display: block;
-  height: 80%;
-  width: 100%;
-  margin: auto;
+.desktopNode {
+    text-align: center;
+    font-family: Desktop;
+    color: #fff;
+    z-index: 0;
 }
 
-.projecttext{
-  font-family: Century Gothic, Arial, sans-serif;
-  display: block;
-  text-align: center;
-  font-size: 24px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+.desktopNodeR {
+    text-align: center;
+    font-family: Desktop;
+    color: #fff;
+    z-index: 0;
+    grid-column-start: -1;
 }
 
-.projectsubtext{
-  font-family: Century Gothic, Arial, sans-serif;
-  text-align: center;
-  font-size: 18px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.projects{
-  width: 100%;
-  background-color: white;
-  margin-bottom: 25px;
-  object-fit: contain;
-}
-
-.projects:hover .projectimage {
-  opacity: 0.6;
-}
-
-.homelink{
-  font-family: Century Gothic, Arial, sans-serif;
-  float: right;
-  font-weight: bold;
-}
-
-.aboutheaders {
-  font-family: Century Gothic, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  margin-bottom: 5px;
-}
-
-.abouttext{
-  font-family: Century Gothic, Arial, sans-serif;
-  font-size: 20px;
-  margin-top: 5px;
-}
-
-.booktitle{
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  font-size: 36px;
-  margin: 5px;
-}
-
-.bookauthor{
-  font-family: Helvetica, Arial, sans-serif;
-  font-style: italic;
-  font-size: 28px;
-  margin: 5px;
-}
-
-.bookdesc{
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 24px;
-  margin: 5px;
-}
-
-.bookcrate{
-  margin-top: 15px;
-  margin-bottom: 45px;
-}
-
-
-
-@font-face {
-  font-family: c64;
-  src: url(fonts/Commodore.ttf);
-}
-
-.about a p.new-label span{
-    position: relative;
-    content: 'About';
-  }
-
-.about:hover a p.new-label span{
-    display: none;
-  }
-
-.about:hover a p.new-label:after{
-    content: '> About';
-  }
-
-.contact a p.new-label span{
-    position: relative;
-    content: 'Contact & Links';
-  }
-
-.contact:hover a p.new-label span{
-    display: none;
-  }
-
-.contact:hover a p.new-label:after{
-    content: '> Contact & Links';
-  }
-
-.projectsmain a p.new-label span{
-    position: relative;
-    content: 'Project Showcase';
-  }
-
-.projectsmain:hover a p.new-label span{
-    display: none;
-  }
-
-.projectsmain:hover a p.new-label:after{
-    content: '> Work & Projects';
-  }
-
-  .projectsall a p.new-label span{
-    position: relative;
-    content: 'All Work';
-  }
-
-.projectsall:hover a p.new-label span{
-    display: none;
-  }
-
-.projectsall:hover a p.new-label:after{
-    content: '> All Work';
-  }
-
-  .gamesmods a p.new-label span{
-    position: relative;
-    content: 'Games & Mods';
-  }
-
-.gamesmods:hover a p.new-label span{
-    display: none;
-  }
-
-.gamesmods:hover a p.new-label:after{
-    content: '> Games & Mods';
-  }
-
-.books a p.new-label span{
-  position: relative;
-  content: 'Reading List';
-}
-
-.books:hover a p.new-label span{
-    display: none;
-  }
-
-.books:hover a p.new-label:after{
-    content: '> Reading List';
-  }
-
-  .bannedBooks a p.new-label span{
-    position: relative;
-    content: 'Read Banned Books';
-  }
-  
-  .bannedBooks:hover a p.new-label span{
-      display: none;
-    }
-  
-  .bannedBooks:hover a p.new-label:after{
-      content: '> Read Banned Books';
-    }
-
-.merchant a p.new-label span{
-    position: relative;
-    content: 'Arcade Merchant';
-}
-  
-.merchant:hover a p.new-label span{
-      display: none;
-  }
-  
-.merchant:hover a p.new-label:after{
-      content: '> Arcade Merchant';
-  }
-
-.writings a p.new-label span{
-  position: relative;
-  content: ' Writings';
-}
-.writings:hover a p.new-label span{
-    display: none;
-  }
-.writings:hover a p.new-label:after{
-    content: '> Writings';
-  }
-
-.feedTop{
-    font-family: Century Gothic, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    margin: 0px;
+*{
+	font-family: Pixelated MS Sans Serif !important;
 }
 
 .feedTitle{
-    font-family: Century Gothic, Arial, sans-serif;
     font-weight: bold;
     font-size: 26px;
     margin: 0px;
 }
 
 .feedText{
-    font-family: Century Gothic, Arial, sans-serif;
     font-size: 22px;
     margin: 0px;
 }
 
-.scroll{
+.contactText{
+    font-size: medium;
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+.contactText a:link {
+    color: blue;
 }
 
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 92px;
-  text-align: center;
-  color: white;
+.contactText a:hover {
+    color: black;
 }
 
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+.contactText a:visited{
+    color: blueviolet;
 }
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
-  }

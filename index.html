@@ -1,240 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Virtual Home of Lumen</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
     <link rel="shortcut icon" href="glider.ico">
 
-    <script>
-
-        if ( window.addEventListener ) {
-            var kkeys = [], k = "38,38,40,40,37,39,37,39,66,65";
-            window.addEventListener("keydown", function(e){
-            kkeys.push( e.keyCode );
-            if ( kkeys.toString().indexOf( k ) >= 0 ){
-                alert("♥");
-                kkeys = [];
-            }
-            }, true);
-        }
-
-        function closeNav() {
-            document.getElementById("myNav").style.display = "none";
-        }
-
-        function testDates() {
-            var date = new Date();
-            var day = date.getDate();
-            var month = date.getMonth() + 1;
-
-            if (day == 5 && month == 6){
-                document.getElementById("myNav").style.display = "block";
-            }
-
-            if ((day >= 14 && day <= 25) && month == 12){
-                var childrenDiv = document.getElementsByClassName("tabs")
-                for (var i = 0; i < childrenDiv.length; i++){
-                    childrenDiv[i].style.color = "red";
-                }
-                document.getElementsByClassName("FunZone2")[0].style.color = "green"
-                document.getElementById("mainText").style.color = "red"
-                var bolds = document.getElementsByClassName("mainBold");
-                for (var i = 0; i < bolds.length; i++){
-                    bolds[i].style.color = "green";
-                }
-            }
-
-        }
-
-    </script>
-
+    <title>LumenOS</title>
 </head>
 
-<body style="padding: 0px; margin: 0px" onload="testDates()" id="theBody">
 
-    <!-- Overlay -->
-    <div id="myNav" class="overlay">
+<body style="background-color: #378182;">
+    <script src="bits.js"></script>
 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <script type="text/javascript">
+        window.onload = initHome;
       
-        <div class="overlay-content">
-            <p>SAVE
-            FERRIS</p>
+        let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+
+        if (isMobile) {
+            console.log("Mobile detected")
+            window.location.href = "/beta/mobile";
+        }
+    </script>
+    
+    <div class="window" style="width: 40%; height: fit-content; position: absolute; left: 15%; top: 8%; z-index: 1;" id="main">
+        <div class="title-bar" id="mainheader">
+            <div class="title-bar-text">Hello world!</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" disabled></button>
+                    <button aria-label="Maximize" disabled></button>
+                    <button aria-label="Close" onclick="hideHome()"></button>
+                </div>
+            </div>
+        <div class="window-body">
+            <p style="font-size: 4vh;">Hello, I'm <b>Aidan "Lumen" Moran</b>. I'm a <b>Computer Scientist</b>, <b>artist</b> of sorts, and <b>game dev</b>. Think my job title is "wearer of hats". Click the X icon in the top right to close this (or any) window, and use the desktop icons to navigate to different pages. Welcome to my little corner of the internet!</p>
         </div>
-      
-      </div>
-
-    <!-- Main content-->
-    <div class="containerHomepage">
-
-        <div class="Main" id="mainText">
-                <p class="mainText">Hello, I'm <b class="mainBold">Aidan "Lumen" Moran</b>. I'm a <b class="mainBold">Computer Scientist</b>, <b class="mainBold">Creative</b>, and general <b class="mainBold">Researcher</b> of many scientific fields. This is my little corner of the internet to host my portfolio, contact, writings, games, and other bits I want to send out into the digital void. Welcome to my website.</p>
-            <hr>
-            <!--- <marquee style="font-size: 26px; font-weight: bold; color: red;">BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE - BETA WEBPAGE - NOT LIVE</marquee> -->
-        </div>
-
-        <div class="FunZone1">
-
-            <div class="about" style="width:fit-content">
-                <a href="about/about.html">
-                    <p class="tabs new-label">
-                        <span>About</span>
-                    </p>
-                </a>
-            </div>
-
-
-            <div class="projectsmain" style="width:fit-content">
-                <a href="projects/projects.html">
-                    <p class="tabs new-label">
-                        <span>Work & Projects</span>
-                    </p>
-                </a>
-            </div>
-
-            <div class="gamesmods" style="width:fit-content">
-                <a href="games/games.html">
-                    <p class="tabs new-label">
-                        <span>Games & Mods</span>
-                    </p>
-                </a>
-            </div>
-
-            <div class="writings" style="width:fit-content">
-                <a href="writings/writings.html">
-                    <p class="tabs new-label">
-                        <span>Writings</span>
-                    </p>
-                </a>
-            </div>
-
-            <div class="merchant" style="width:fit-content">
-                <a href="https://ArcadeMerchant.redbubble.com">
-                    <p class="tabs new-label">
-                        <span>Arcade Merchant</span>
-                    </p>
-                </a>
-            </div>
-
-            <div class="books" style="width:fit-content">
-                <a href="readinglist/readinglist.html">
-                    <p class="tabs new-label">
-                        <span>Reading List</span>
-                    </p>
-                </a>
-            </div>
-
-            <div class="bannedBooks" style="width:fit-content">
-                <a href="bannedBooks/bannedBooks.html">
-                    <p class="tabs new-label">
-                        <span>Read Banned Books</span>
-                    </p>
-                </a>
-            </div>
-
-            <div class="contact" style="width:fit-content">
-                <a href="contact/contact.html">
-                    <p class="tabs new-label">
-                        <span>Contact & Links</span>
-                    </p>
-                </a>
-            </div>
-
-        </div>
-
-        <div class="FunZone2">
-
-            <div class="UpdateTitle ">
-
-                <p class="UpdateText">Updates & Releases</p>
-                <hr>
-
-            </div>
-
-            <div class="Updates">
-
-                    <!-- 
-                        <div>
-                            <p class="feedTitle"></p>
-                            <p class="feedText"></p>
-                        </div>
-                        <hr>
-                    -->
-                    <div>
-                        <p class="feedTitle">Minor Updates!</p>
-                        <p class="feedText">The games & mods page has been reorganized to prepare for future releases. A small package of some JavaScript functions I often use in my js games called 'parmesan.js' has also been released on my GitHub.</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="feedTitle">Two new mini-games!</p>
-                        <p class="feedText"><b>Invader From Another (Spatial) Dimension</b> (for a class) and <b>The Stranger</b> (for a friend) have been added to the micro games section</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="feedTitle">The Toy Box is now online!</p>
-                        <p class="feedText">All web capable demos in The Toy Box are now hosted online. Go to projects > TheToyBox to view.</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="feedTitle">Futility out now!</p>
-                        <p class="feedText">Futility is a text adventure about life, love, going through the motions, and meeting a cat. Play it now in the Games & Mods Tab!</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="feedTitle">Read banned books!</p>
-                        <p class="feedText">New tab with resources and data relating to banned books! Because wtf man!</p>
-                    </div>
-                    <hr>
-                    <div>
-                    <div>
-                        <p class="feedTitle">New Writings Tab</p>
-                        <p class="feedText">Wanna read things I've written? Sure ya do! Check out the writings tab!</p>
-                    </div>
-                    <hr>
-                        <p class="feedTitle">New Email - aimorandev@gmail.com</p>
-                        <p class="feedText">To help organize my inboxes, I've created a new contact email. Please use this for all contact from here on out, and use my PGP key if you want to encrypt.</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="feedTitle">A Town With A River has been released!</p>
-                        <p class="feedText">I made a game that I think is pretty neat! Go check it out in the Games & Mods tab!</p>
-                    </div>
-                    <hr>
-                    <div>
-                            <p class="feedTitle">I'm on Threads!</p>
-                            <p class="feedText">I was planning on making a Twitter for a while, but since that's all gone to hell, I'm on Threads! Follow me @_itslumen!</p>
-                        </div>
-                        <hr>
-                    <div>
-                        <p class="feedTitle">Arcade Merchant is released!</p>
-                        <p class="feedText">Over the summer I've begun making custom shirts with screen printing and decided to sell some of the designs on Redbubble! Shirts will come soon on Etsy once I get better at printing and make screens of more designs!</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="feedTitle">PGP Key Updated</p>
-                        <p class="feedText">Updated the PGP key on the Contact page. If you decide to use PGP encryption in an email to me, please make sure you use the most up to date one!</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="feedTitle">3D Garden Labels released!</p>
-                        <p class="feedText">As well as a computer scientist and chemist, I'm an avid gardener! To blend my hobbies, I created custom garden labels that can be laser cut and look amazing!</p>
-                    </div>
-                    <hr>
-                    <div>
-                        <p class="feedTitle">Babel added to AI-Tools</p>
-                        <p class="feedText">Quickly rename a whole directory of files using a sequential index, UUID, or SHA256 hash</p>
-                    </div>
-                    <hr>
-
-            </div>
-            
-        </div>
-
     </div>
 
+    <div class="window" style="width: 35%; height: 40%; position: absolute; left: 53%; top: 46%; z-index: 1;" id="updates">
+        <div class="title-bar" id="updatesheader">
+            <div class="title-bar-text">Updates</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" disabled></button>
+                    <button aria-label="Maximize" disabled></button>
+                    <button aria-label="Close" onclick="hideUpdates()"></button>
+                </div>
+            </div>
+        <div class="window-body" style="overflow-y: scroll; height: calc(100% - 40px)">
+            <ul class="tree-view">
+                <p class="feedTitle">Massive Updates!</p>
+                <p class="feedText">The site has been updated to a whole new style and a new URL! Welcome to interstellarshareware.net!! (A bug preventing The Stranger from working on all devices has been fixed, too!)</p>
+                <hr>
+                <p class="feedTitle">Minor Updates!</p>
+                <p class="feedText">The games & mods page has been reorganized to prepare for future releases. A small package of some JavaScript functions I often use in my js games called 'parmesan.js' has also been released on my GitHub.</p>
+                <hr>
+                <p class="feedTitle">Two new mini-games!</p>
+                <p class="feedText"><b>Invader From Another (Spatial) Dimension</b> (for a class) and <b>The Stranger</b> (for a friend) have been added to the micro games section</p>
+                <hr>
+                <p class="feedTitle">The Toy Box is now online!</p>
+                <p class="feedText">All web capable demos in The Toy Box are now hosted online. Go to projects > TheToyBox to view.</p>
+                <hr>
+                <p class="feedTitle">Futility out now!</p>
+                <p class="feedText">Futility is a text adventure about life, love, going through the motions, and meeting a cat. Play it now in the Games & Mods Tab!</p>
+                <hr>
+                <p class="feedTitle">Read banned books!</p>
+                <p class="feedText">New tab with resources and data relating to banned books! Because wtf man!</p>
+                <hr>
+                <p class="feedTitle">A Town With A River has been released!</p>
+                <p class="feedText">I made a game that I think is pretty neat! Go check it out in the Games & Mods tab!</p>
+                <hr>
+            </ul>
+        </div>
+    </div>
+
+    <div class="window" style="height: 50%; position: absolute; left: 30%; top: 20%; width: 40%; z-index: 1;" hidden="true" id="about">
+        <div class="title-bar" id="aboutheader">
+            <div class="title-bar-text">About</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" disabled></button>
+                    <button aria-label="Maximize" disabled></button>
+                    <button aria-label="Close" onclick="hideAbout()"></button>
+                </div>
+            </div>
+        <div class="window-body" style="height: calc(100% - 40px); overflow-y: scroll;">
+            <ul class="tree-view">
+                <p style="font-family: Desktop; font-size: xx-large; margin: 0%;"><span id="randomize"></span> They're currently majoring in computer science, as well as studying historical alchemy, botany, and clandestine pharmacology outside of uni. Their work in CS started in 5th grade when they saw a video on YouTube on how to make green "Matrix" text using batch. Since then, they've grown to love CS, toying around with anything from VR headsets to Commodore 64s. Although a lover of code, they're often drawn to creative coding, story telling, and writing, occasionally making a game or two. They work as a makerspace technician, maintaining 3D printers, laser cutters, and other crafty gadgets.</p>
+            </ul>    
+        </div>
+    </div>
+
+    <div class="window" style="height: fit-content; position: absolute; left: 40%; top: 40%; width: fit-content;" hidden id="arcade">
+        <div class="title-bar" id="arcadeheader">
+            <div class="title-bar-text">Fast travel to Arcade Merchant?</div>
+            </div>
+        <div class="window-body" style="height: calc(100% - 40px); justify-content: center;">
+                <p style="font-family: Desktop; font-size: large; text-align: center;">Arcade Merchant is hosted on <b>redbubble.com</b>.</p>
+                <p style="font-family: Desktop; font-size: large; text-align: center;">Would you like to continue?</p>
+        </div>
+        <br>
+        <div class="window-body" style="height: calc(100% - 40px); justify-content: center; display: flex;">
+            <a href="https://www.redbubble.com/people/ArcadeMerchant/shop?asc=u"><button style="margin-right: 5px;">Continue</button></a><button style="margin-left: 5px;" onclick="hideArcade()">Cancel</button>
+        </div>
+    </div>
+
+
+    <div class="window" style="height: 40%; position: absolute; left: 52%; top: 13%; width: 40%; word-wrap: normal; z-index: 1;" id="contact" hidden>
+        <div class="title-bar" id="contactheader">
+            <div class="title-bar-text">Contact</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize" disabled></button>
+                <button aria-label="Maximize" disabled></button>
+                <button aria-label="Close" onclick="hideContact()"></button>
+            </div>
+            </div>
+        <div class="window-body" style="height: calc(100% - 40px); justify-content: center; overflow-y: scroll;">
+            <ul class="tree-view" style=" overflow-x: scroll;">
+                <p class="contactText" style="font-weight: bold;">Main Contacts and Links</p>
+                <br>
+
+                <p class="contactText"><b>Email</b> - Likely the best way to contact - <a href = "mailto:aimorandev@gmail.com" target="_blank">aimorandev@gmail.com</a></p>
+                <p class="contactText"><b>GitHub</b> - Projects and Snippets - <a href="https://github.com/Lumen-git" target="_blank">Lumen-git</a></p>
+                <p class="contactText"><b>Instagram</b> - For casual contact and day-to-day life and projects - <a href="https://www.instagram.com/_itslumen/" target="_blank">@_itslumen</a></p>
+                <p class="contactText"><b>Threads</b> - Casting words and botany pics into the void - @_itslumen</p>
+                <p class="contactText"><b>LinkedIn</b> - For the professional nonsense (I'm never on here, this is just to feign professionalism when I meet guys in suits) - <a href="https://www.linkedin.com/in/aidan-moran-l/" target="_blank">LinkedIn</a></p>
+
+                <br>
+                <hr>
+                <p class="contactText" style="font-weight: bold;">My work elsewhere</p>
+                <br>
+
+                <p class="contactText"><b>Mod DB</b> - Mostly where I upload my Doom WADs - <a href="https://www.moddb.com/members/itslumen" target="_blank">itsLumen</a></p>
+                <p class="contactText"><b>itch.io</b> - Where I upload my games - <a href="https://itslumen.itch.io/" target="_blank">Lumen</a></p>
+
+                <br>
+                <hr>
+                <p class="contactText" style="font-weight: bold;">Support my endeavors</p>
+                <br>
+
+                <p class="contactText"><b>Ko-Fi</b> - <a href="https://ko-fi.com/lumengit" target="_blank">lumengit</a></p>
+                <p class="contactText"><b>Bitcoin</b> - bc1prpusgn27x72zgufv45366er3wv6lzgx72uen0a39l3emp35unkdsrvs2p8</p>
+
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <!--- background stuff -->
+    <div class="desktopLeft">
+        <div class="desktopNode">
+            <a><img src="images/trash.png" class="desktopIcon"></a>
+        </div>
+        <div class="desktopNode">
+            <a onclick="showAbout()" style="cursor:pointer;"><img src="images/about.png" class="desktopIcon"></a>
+        </div>
+        <div class="desktopNode">
+            <a href="/projects/"><img src="images/workprojects.png" class="desktopIcon"></a>
+        </div>
+        <div class="desktopNode">
+            <a href="/games/"><img src="images/gamesmods.png" class="desktopIcon"></a>
+        </div>
+        <div class="desktopNode">
+            <a onclick="showArcade()" style="cursor:pointer;"><img src="images/arcademerchant.png" class="desktopIcon"></a>
+        </div>
+        <div class="desktopNode">
+            <a href="readbannedbooks/"><img src="images/bannedbooks.png" class="desktopIcon"></a>
+        </div>
+        <div class="desktopNode">
+            <a href="writing/"><img src="images/writings.png" class="desktopIcon"></a>
+        </div>
+        <div class="desktopNode">
+            <a onclick="showContact()" style="cursor:pointer;"><img src="images/contactlinks.png" class="desktopIcon"></a>
+        </div>
+        <div class="desktopNode">
+            <a onclick="showHome()" style="cursor:pointer;"><img src="images/home.png" class="desktopIcon"></a>
+        </div>
+        <div class="desktopNode">
+            <a onclick="showUpdates()" style="cursor:pointer;"><img src="images/updates.png" class="desktopIcon"></a>
+        </div>
+    </div>
+
+    <div class="desktopRight">
+        <div class="desktopNodeR">
+            <a href="readinglist/"><img src="images/readinglist.png" class="desktopIcon"></a>
+        </div>
+    </div>
+
+    <img src="images/start.png" class="start">
+    <div class="clockText" style="z-index: 3">
+        <p id="clockText">xx:xx AM</p>
+    </div>
+    <img src="images/clock.png" class="clock">
+    <img src="images/taskBar.png" class="taskBar">
+
 </body>
+
 
 </html>
