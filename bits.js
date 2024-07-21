@@ -12,6 +12,18 @@ function showHome(){
     globalZ = globalZ + 1
 }
 
+function hideCookies(){
+  var target = document.getElementById("cookies")
+  target.hidden = true
+}
+
+function showCookies(){
+  var target = document.getElementById("cookies")
+  target.hidden = false
+  target.style.zIndex = globalZ.toString()
+  globalZ = globalZ + 1
+}
+
 function hideUpdates(){
     var target = document.getElementById("updates")
     target.hidden = true
@@ -111,7 +123,8 @@ function initAbout(){
                 "Aidan is a computer scientist who understands they really shouldn't try to build a particle accelerator in their bedroom, but that won't stop them from trying!",
                 "Aidan once had dinner with the actor who played Columbo while on vacation in New Jersey. That's not true but imagine how cool that would be, right? Like the waiter leaves and he jumps out of his seat like 'Oh and one more thing... a side of steamed broccoli please.' You know Columbo would be a steamed broccoli guy. 'Ya know, I never much cared for broccoli but my wife says the veggies would be good for me.' I know this is meant to be my about me page but this is fun, right? It's like a little bonding experience for us. If this is your first time here it's not always like this but the first few lines of this page are random. You can refresh if you want something else. Or you can keep reading this and we can talk about how great Columbo is! Love that guy. Anyways Aidan is a computer scientist.",
                 "Aidan is a computer scientist who is just winging it.",
-                "Aidan's main goal is to confuse and disorient you in the most entertaining way possible."];
+                "Aidan's main goal is to confuse and disorient you in the most entertaining way possible.",
+                "Aidan doesn't know what's going on."];
     let target = document.getElementById("randomize");
     target.innerHTML = lines[Math.floor(Math.random()*lines.length)];
 }
@@ -123,6 +136,7 @@ function initHome(){
     dragElement(document.getElementById("about"))
     dragElement(document.getElementById("arcade"))
     dragElement(document.getElementById("contact"))
+    dragElement(document.getElementById("cookies"))
 }
 
 function dragElement(elmnt) {

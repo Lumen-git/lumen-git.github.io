@@ -76,6 +76,38 @@
         </div>
     </div>
 
+    <div class="window" style="width: 35%; height: 40%; position: absolute; left: 12%; top: 35%; z-index: 3;" id="cookies" hidden="true">
+        <div class="title-bar" id="cookiesheader">
+            <div class="title-bar-text">cookies_and_analytics.txt</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" disabled></button>
+                    <button aria-label="Maximize" disabled></button>
+                    <button aria-label="Close" onclick="hideCookies()"></button>
+                </div>
+            </div>
+        <div class="window-body" style="overflow-y: scroll; height: calc(100% - 40px)">
+            <pre style="white-space: pre-wrap;">I'm a stats nerd, so I use Simple Analytics to keep track of page visits.
+
+Interstellar Shareware will track:
+- Page views
+- Visitors
+- Country of visitor origin
+
+Interstellar Shareware will NOT:
+- Track links clicked to other sites from this one
+- Track any data on the "Read Banned Books" page
+- Use cookies to track you across the web
+- Store any information about you, your device, or your visit.
+
+Our stats are PUBLIC, so you can use Simple Analytics to see our stats and what I track.
+
+I also respect your browsers "Do Not Track" request, as well as use a JavaScript tracking method that will be blocked by most ad and tracking block extensions.
+
+In an internet becoming increasingly tracked and centralized, we believe your right to privacy is important, and do our best to keep you private, secure, and safe. If you any questions, feel free to reach out to me :)
+            </pre>
+        </div>
+    </div>
+
     <div class="window" style="height: 50%; position: absolute; left: 30%; top: 20%; width: 40%; z-index: 1;" hidden="true" id="about">
         <div class="title-bar" id="aboutheader">
             <div class="title-bar-text">About</div>
@@ -186,6 +218,9 @@
     <div class="desktopRight">
         <div class="desktopNodeR">
             <a href="readinglist/"><img src="images/readinglist.png" class="desktopIcon"></a>
+        </div>
+        <div class="desktopNodeR">
+            <a onclick="showCookies()" style="cursor:pointer;"><img src="images/cookies.png" class="desktopIcon"></a>
         </div>
     </div>
 
