@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>LumenOS</title>
+</head>
+
+
+<body style="background-color: #378182;">
+
+    <script src="../../bits.js"></script>
+
+    <script type="text/javascript">
+        window.onload = setTime;
+    </script>
+
+
+    <div class="window" style="width: 100%; height: calc(99dvh - 40px);">
+
+        <div class="title-bar">
+            <div class="title-bar-text">SCRAM</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize" disabled></button>
+                    <button aria-label="Maximize" disabled></button>
+                    <a href="../"><button aria-label="Close"></button></a>
+                </div>
+            </div>
+
+            <div class="window-body" style="height: calc(100% - 40px); overflow-y: scroll;">
+
+                <ul class="tree-view">
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <img src="images/ScramButtonLogo.png" style="height: 300px;">
+                    </div>
+
+                    <br>
+
+                    <p style="font-size: large;">SCRAM is a <s>idle experiment</s> fun little browser game where you take control of a M-PH Automated Nuclear Reactor. Can your watchful eye SCRAM the possibly faulty reactor in time and protect the local population? Can you generate enough energy before that big, bright, alluring button? Is there even an end in sight?!? Maybe! Come SCRAM!</p>
+
+                    <br>
+
+                    <p style="font-size: large; font-weight: bold;">How to Play:</p>
+
+                    <p style="font-size: large;">The goal of the game is to monitor the reactor and SCRAM it if you believe it is going to go critical. To do this, keep an eye on the monitors given to you and your surroundings, as any strange readings or sounds could be a sign to SCRAM. You start with access to temperature and generation readings, but soon expand to pressure, phase sync fault logs, and core stability. High rates of phase failure, low core stability, critical (red) pressure, or anomalies in temperature or generation could all be signs to SCRAM. This control board is isolated from the reactor, so if anything is damaged here, the reactor is still safe. And please, don't break anything.</p>
+
+                    <br>
+
+                    <p style="font-size: large;">Leaderboard service by the amazingly talented and generous <a href="https://www.danqzq.games/#">Danial Jumagaliyev</a></p>
+                    <p style="font-size: large;">Audio from Zapsplat and Pixabay</p>
+
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <iframe frameborder="0" src="https://itch.io/embed/2893667?bg_color=aeaeae&amp;fg_color=222222&amp;link_color=f6fc00&amp;border_color=838383" width="552" height="167"><a href="https://itslumen.itch.io/scram">SCRAM by Lumen</a></iframe>
+                    </div>
+
+                <br>
+
+                </ul>
+
+        </div>
+    </div>
+
+    <img src="../../images/start.png" class="start">
+    <div class="clockText" style="z-index: 3">
+        <p id="clockText">xx:xx AM</p>
+    </div>
+    <img src="../../images/clock.png" class="clock">
+    <img src="../../images/taskBar.png" class="taskBar">
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+</body>
+
+
+</html>
