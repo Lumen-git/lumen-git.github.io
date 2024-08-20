@@ -83,7 +83,7 @@ function setTime(){
 }
 
 function initAbout(){
-    let lines = ["Aidan is a artist, botanist, and game designer standing on each other's shoulders and wearing the clothes of a computer scientist.",
+    let lines = ["Aidan is a artist, horticulturist, and game designer standing on each other's shoulders and wearing the clothes of a computer scientist.",
                 "Aidan is a computer scientist who wants to be doing anything but computer science.",
                 "When the universe was creating Aidan, it threw a dart at the dart board of life paths. It missed, tore through a poorly cropped RedBubble print of 'Nighthawks', and stuck in the 'J' key of a Commodore 64. They're now a computer scientist.",
                 "Aidan is a computer scientist who accidentally won an award for creating a hacking tool while they were just trying to prank their friends.",
@@ -114,7 +114,7 @@ function initAbout(){
                 "Aidan is a computer scientist who is either colorblind or doesn't understand the color green on a fundamental level and either option scares them.",
                 "Aidan is a computer scientist who is horrified of spiders.",
                 "Aidan is a computer scientist who can see sound.",
-                "Aidan is a computer scientist who everyone assumes is really good at chess for some reason but secretly doesn't understand chess. Not in the slightest.",
+                "Aidan is a computer scientist who everyone assumes is really good at chess for some reason but secretly doesn't understand chess. Not in the slightest. Their ELO rating after a few games is worse than a bot's who makes random moves.",
                 "Aidan is a computer scientist who forgot what cats were after getting their wisdom teeth out. Rediscovering their cat was wild.",
                 "Aidan is a computer scientist who heard Cave Johnson's Lemon Rant for Portal 2 at a too young age. It became deeply lodged in their psyche and explains why they are the way they are.",
                 "Aidan is a computer scientist who thinks Who's On First is the peak of all comedy.",
@@ -124,7 +124,12 @@ function initAbout(){
                 "Aidan once had dinner with the actor who played Columbo while on vacation in New Jersey. That's not true but imagine how cool that would be, right? Like the waiter leaves and he jumps out of his seat like 'Oh and one more thing... a side of steamed broccoli please.' You know Columbo would be a steamed broccoli guy. 'Ya know, I never much cared for broccoli but my wife says the veggies would be good for me.' I know this is meant to be my about me page but this is fun, right? It's like a little bonding experience for us. If this is your first time here it's not always like this but the first few lines of this page are random. You can refresh if you want something else. Or you can keep reading this and we can talk about how great Columbo is! Love that guy. Anyways Aidan is a computer scientist.",
                 "Aidan is a computer scientist who is just winging it.",
                 "Aidan's main goal is to confuse and disorient you in the most entertaining way possible.",
-                "Aidan doesn't know what's going on."];
+                "Aidan doesn't know what's going on.",
+                "Aidan is really trying over here.",
+                "Aidan is a professional in the same say that Olive Garden is 'fancy'.",
+                "Aidan writes like they just smoked a joint rolled in a page from a Douglas Adams book. But not 'Hitchhiker's Guide' Adams, more of a 'Dirk Gently' Adams. And also like a mellow indica hybrid, but a lot, ya know?",
+                "Aidan is a computer scientist and writer who is trapped in the JavaScript that runs this site.",
+                "Aidan is a writer with horrible handwriting."];
     let target = document.getElementById("randomize");
     target.innerHTML = lines[Math.floor(Math.random()*lines.length)];
 }
