@@ -11,6 +11,36 @@
     <title>LumenOS</title>
 </head>
 
+<style>
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .content-div {
+        width: 33%;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    .content-div h2 {
+        font-size: 18px;
+    }
+
+    .list,li{
+        margin: 8px 0px;
+        font-size: 14px;
+    }
+
+    /* Ensure the content adjusts well on smaller screens */
+    @media (max-width: 768px) {
+        .content-div {
+            width: 100%;
+        }
+    }
+</style>
+
 
 <body style="background-color: #378182;">
 
@@ -38,46 +68,53 @@
 
                     <p style="font-size: x-large;"><b>Things I've written</b>, listed newest to oldest</p>
 
-                    <table style="table-layout: fixed; width: 100%;">
-                        <tr class="topRow">
-                            <td class="topRowtd"><b>Essays, Papers</b>, and other semi-serious writings</td>
-                            <td class="topRowtd"><b>Poems</b>, which I write now apparently</td>
-                            <td class="topRowtd"><b>Notes</b> I leave myself on my phone. More informal, blog like content. Much less structured (and filtered)</td>
-                        </tr>
-                        <tr>
-                            <td><a href="htmlFiles/notesonenvironments/notesoninvironments.html">Notes on Environments and Stories</a> <span style="font-size: 12px;">(<a href="files/Notes on Environments and Stories.pdf">pdf</a>)</span></td>
-                            <td><a href="htmlFiles/coffeegod.html">How many lumps of sugar does God take in their coffee?</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td><a href="htmlFiles/TechAndLeadership.html">Technology and Leadership: Global Innovation and Your Time as a Resource <i>(Pronounced with tongue firmly planted in cheek) </i></a> <span style="font-size: 12px;">(<a class="link" href="files/TechAndLeadership.docx">docx</a> &amp; <a class="link" href="files/TechAndLeadership.pdf">pdf</a>)</span></td>
-                            <td><a href="files/saidmore.txt">saidmore.txt</a></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><a href="htmlFiles/WildflowersAndCancer.html">Wildflowers and Cancer Spread the Same</a> <span style="font-size: 12px;">the ending poem to <i>Futility</i>, separately published</span></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><a href="files/immortalityAndCookies.txt">immortalityAndCookies.txt</a> <span style="font-size: 12px;">written for the Cafe for Poetic Computation's open file showcase</span></td>
-                            <td></td>
-                        </tr>
-                    </table>
-
-                    <br>
-                    <hr>
-                    <br>
-
-                    <table style="table-layout: fixed; width: 33%;">
-                        <tr class="topRow">
-                            <td class="topRowtd"><b>D&D</b> homebrew content I made for campaigns with friends</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                        </tr>
-                    </table>
+                    <div class="container">
+                        <div class="content-div">
+                            <p style="font-size: medium;"><b>Essays, Papers</b>, and other semi-serious writings</p>
+                            <ul class="lists">
+                                <li>
+                                    <a href="htmlFiles/notesonenvironments/notesoninvironments.html">Notes on Environments and Stories</a>
+                                    <span style="font-size: 12px;">(<a href="files/Notes on Environments and Stories.pdf">pdf</a>)</span>
+                                </li>
+                                <li>
+                                    <a href="htmlFiles/TechAndLeadership.html">Technology and Leadership: Global Innovation and Your Time as a Resource <i>(Pronounced with tongue firmly planted in cheek)</i></a>
+                                    <span style="font-size: 12px;">(<a href="files/TechAndLeadership.docx">docx</a> &amp; <a href="files/TechAndLeadership.pdf">pdf</a>)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="content-div">
+                            <p style="font-size: medium;"><b>Poems</b>, which I write now apparently</p>
+                            <ul class="lists">
+                                <li><a href="htmlFiles/coffeegod.html">How many lumps of sugar does God take in their coffee?</a></li>
+                                <li><a href="files/saidmore.txt">saidmore.txt</a></li>
+                                <li>
+                                    <a href="htmlFiles/WildflowersAndCancer.html">Wildflowers and Cancer Spread the Same</a>
+                                    <span style="font-size: 12px;">the ending poem to <i>Futility</i>, separately published</span>
+                                </li>
+                                <li>
+                                    <a href="files/immortalityAndCookies.txt">immortalityAndCookies.txt</a>
+                                    <span style="font-size: 12px;">written for the Cafe for Poetic Computation's open file showcase</span>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="content-div">
+                            <p style="font-size: medium;"><b>Notes</b> I leave myself on my phone. More informal, blog-like content. Much less structured (and filtered)</p>
+                            <ul class="lists">
+                                <li><a href="notes/thescariestthing.html">The Scariest Thing I Can Think Of</a></li>
+                                <li><a href="notes/paradolia.html">Pareidolia</a></li>
+                                <li><a href="notes/mctransitsystem.html">Minecraft Transit System</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="content-div">
+                            <p style="font-size: medium;"><b>D&D homebrew content</b> I made for campaigns with friends</p>
+                            <ul class="lists">
+                                <li>No content added yet.</li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </ul>
 
